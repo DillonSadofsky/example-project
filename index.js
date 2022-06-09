@@ -3,7 +3,7 @@ var app = express()
 const port = 3000
 
 app.get('/ray', (request, result) => {
-	result.send(`Hello ${request.query.name}!`)
+	result.send(`Hello! (Connecting IP: ${request.ip || "Error, IP could not be found"})`)
 })
 
 app.listen(port, () => {
