@@ -6,8 +6,17 @@ app.get('/', (request, result) => {
 	result.send(`Hello ${request.query.name || 'World'}!`)
 })
 
+
 app.get('/van', (request, result) => {
 	result.send('Hello from Van!')
+
+app.get('/SaketReddy', (request, result) => {
+	//result.send(`Hello ${request.query.name || 'World'}!`)
+	result.send(`Hi Saket Reddy!`)
+})
+
+app.get('/ray', (request, result) => {
+	result.send(`Hello! (Connecting IP: ${request.ip || "Error, IP could not be found"})`)
 })
 
 app.listen(port, () => {
