@@ -2,6 +2,10 @@ var express = require('express')
 var app = express()
 const port = 3000
 
+app.get('/', (request, result) => {
+	result.send(`Hello ${request.query.name || 'World'}!`)
+})
+
 app.get('/ray', (request, result) => {
 	result.send(`Hello! (Connecting IP: ${request.ip || "Error, IP could not be found"})`)
 })
