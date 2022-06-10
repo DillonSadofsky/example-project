@@ -9,6 +9,7 @@ app.get('/', (request, result) => {
 
 app.get('/van', (request, result) => {
 	result.send('Hello from Van!')
+})
 
 app.get('/SaketReddy', (request, result) => {
 	//result.send(`Hello ${request.query.name || 'World'}!`)
