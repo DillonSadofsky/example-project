@@ -6,6 +6,9 @@ app.get('/', (request, result) => {
 	result.send(`Hello ${request.query.name || 'World'}!`)
 })
 
+app.get('/jake', (request, result) => {
+    result.send(`Hello I'm Jake`)
+})
 
 app.get('/van', (request, result) => {
 	result.send('Hello from Van!')
