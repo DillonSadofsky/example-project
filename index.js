@@ -25,8 +25,14 @@ app.get('/ray', (request, result) => {
 	result.send(`Hello! (Connecting IP: ${request.ip || "Error, IP could not be found"})`)
 })
 
+
+app.get('/elsa', (request, result) => {
+	result.send(`Heyya :3. I see u`)
+})
+
 app.get('/aj', function (req, res) {
   res.send('Ali Johnson')
+
 })
 
 app.listen(port, () => {
